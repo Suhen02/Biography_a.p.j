@@ -1,5 +1,5 @@
 
-h2{
+h1{
     color: blue;
     font-weight: bold;
 }
@@ -12,7 +12,12 @@ h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 nav{
-    margin: 10px 0;
+    margin: 10px 0; 
+    top: 0;            
+   width: 100%;         
+   background-color: hsla(0, 0%, 100%, 0.598);
+   overflow: hidden;
+   z-index: 1000; 
     
 }
 nav ul{
@@ -21,7 +26,7 @@ nav ul{
     margin: 0;
     overflow: hidden;
     display: flex;
-    justify-content: flex-end;
+    justify-content:center;
     
    
 }
@@ -31,17 +36,17 @@ nav ul li{
 nav ul li a{
     display: block;
     text-align: center;
-    padding: 14px 20px;
+    padding: 20px 20px;
     text-decoration: none;
-   margin: 5px 5px;
-   font-weight: bold;
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   width: 100%;
-   
+    margin: 5px 5px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    font-size: 1.5em;
 }
 nav ul li a:hover{
     border-radius: 20px;
-    background-color: brown;
+    text-decoration: underline;
 }
 .navbar { 
     list-style-type: none; 
@@ -76,7 +81,7 @@ nav ul li a:hover{
 .about_text{
     margin: auto;
     display: flex;
-    width: 800px;
+    width: 1000px;
     justify-content: center;
 }
 .about_text .inner_text{
@@ -87,16 +92,17 @@ nav ul li a:hover{
   
    font-family: Georgia, 'Times New Roman', Times, serif;
    text-align: justify;
+   font-size: 1.1rem;
 }
 .first{
     margin-left: none;
     
 }
-h3{
+h2{
     text-align: center;
     font-weight: bold;
     color: blue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: cursive;
 }
 .awards{
     display:flex;
@@ -125,18 +131,18 @@ h3{
     font-family: 'Times New Roman', Times, serif;
 }
 .award_inner:hover{
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
-    transform: scale(1.07);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    transform: scale(1.01);
 }
 .sec_achivmements{
- /*border: 2px solid black;*/
+
  border-radius: 30px;
- width: 70%;
+ width: 80%;
  height: auto;
  margin: auto;
 }
 .achive_text{
-    width: 600px;
+    width: 800px;
     text-align: justify;
     margin: auto;
 }
@@ -152,41 +158,43 @@ h3{
     text-align: center;
 }
 .sec_book{
-    width: 800px;
+    width: 1000px;
     margin: auto;
 }
 .book_inner{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(120px, auto);
     grid-gap: 20px;
     
 }
 .book_inner .books{
     margin: auto;
     border: 2px solid black;
-    width: 200px;
-    height: 450px;
+    width: 250px;
+    height: 475px;
     border-radius: 20px;
     margin:auto;
     background-color: aliceblue;
-    /*text-align: justify;*/
+   
 }
 .book_inner .books h5,p{
     margin: 10px 10px;
 }
 .book_inner img{
-    width: 197px;
+    width: 100%;
     height: 250px;
     border-radius: 20px 20px 0 0;
 }
 .in_b{
     width: 90%;
-    height: 193px;
+    height: 219px;
     border: 2px solid black;
     margin: auto;
+    text-align: justify;
     border-radius: 0 0 20px  20px;
     background-color: white;
+    border-radius: 5px;
 }
 .book1{
     background: linear-gradient(to right, rgb(248, 235, 243)0%, rgb(210, 177, 195)100%);
@@ -204,25 +212,39 @@ h3{
     background: linear-gradient(to right,  #C19A6B 100%, rgba(250, 249, 255, 0.437) 0%);
 }
 .book_inner .books:hover{
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
-    transform: scale(1.07);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    transform: scale(1.01);
 }
 .in_b a{
    text-decoration: none;
-   margin: 60px 40px;
+   margin: 60px 60px;
+
+   padding: 1px 8px;
+   margin-bottom: 4px;
 }
 .name_book {
     margin: 50px 0;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     color: blue;
-    text-decoration: underline;
+    font-size: 1.7rem;
     
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 .name_book h4{
     font-size: 40px;
 }
-/* styles.css */
+
 .footer {
     margin-top: 20px;
     background: #222;
@@ -290,7 +312,8 @@ h3{
         justify-items: center;
     }
      .image {   
-        margin-left: 65px;
+        margin-left: 21%;
+    
      }
      .response.active{
         display: flex;
@@ -312,27 +335,37 @@ h3{
         margin: auto;
      }
      .achive_text {
-         width: 90%;
+         width: auto;
      }
      .award_inner{
-        width: 90%;
+        width: auto;
         margin: 5px auto;
      }
      .imge{
       width: 100%;  
      }
      .sec_book{
-        width: 90%;
+        width: auto;
+        margin: auto;
      }
      .book_inner{
         display: inline;
-        margin: 5px auto;
+        margin: 2% auto
      }
      .book_inner .books{
-        margin: 15px auto;
+        width: auto;
+        margin:5% 9%;
+        height: auto;
+     }
+     .in_b{
+        height: auto;
+        margin-bottom: 5px;
      }
     .awardratna{
         height:auto;
+    }
+    h2{
+        font-size: 1.8rem;
     }
 }
 
