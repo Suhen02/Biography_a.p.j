@@ -19,8 +19,6 @@ A simple, responsive website built using only HTML and CSS to honor the life and
 ### 🔄 Clone this Repository
 ```bash
 git clone https://github.com/Suhen02/Biography_a.p.j.git
-
-
-
+```
 🌐 [View Live Website](https://suhen02.github.io/Biography_a.p.j/kalam_Bio/index.html)
 
