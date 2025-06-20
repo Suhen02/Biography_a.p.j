@@ -327,8 +327,9 @@ h2{
         margin: auto;
      }
      .about_text .inner_text{
-        width: 90%;
-      margin: auto;
+        width: auto;
+        margin: 30px 30px;
+        font-size: 1rem;
      }
      .awards{
         display: inline;
